@@ -1,0 +1,49 @@
+/* Reset mínimo */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fundo escuro, sem barras de rolagem */
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+  background: #000;
+  color: #ccc;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+/* Centraliza o conteúdo horizontal e verticalmente */
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%; /* fallback */
+  height: 100dvh; /* considera a barra de endereço em celulares */
+  padding: 1vmin;
+}
+
+/*
+  O vídeo preenche toda a área disponível da tela.
+  object-fit: contain mantém a proporção original (sem distorção ou cortes)
+  e centraliza a imagem; sobras ficam em preto, igual ao fundo da página.
+*/
+video {
+  width: 100%;
+  height: 100%;
+  background: #000;
+  object-fit: contain;
+}
+
+/* Mensagem de erro simples */
+#erro {
+  text-align: center;
+  font-size: 1rem;
+}
+
+[hidden] {
+  display: none !important;
+}

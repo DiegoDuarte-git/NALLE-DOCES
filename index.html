@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vídeo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <!--
+      O caminho do vídeo é definido em script.js (constante VIDEO_SRC).
+      Sem autoplay, sem loop e sem muted: o vídeo só toca quando o visitante clicar em Play.
+    -->
+    <video id="player" controls playsinline preload="metadata">
+      Seu navegador não suporta a reprodução de vídeo HTML5.
+    </video>
+    <p id="erro" hidden>Não foi possível carregar o vídeo.</p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
